@@ -24,18 +24,18 @@ Retrieving from Zomato API:
 
 Saving to "restaurants.csv" and after manually formatting data populating Recombee items table with the following properties:
 
-    id (string)
-    type (string)
-    name (string)
-    city (string)
-    topic (string)
-    address (string)
-    rating (string)
+- id (string)
+- type (string)
+- name (string)
+- city (string)
+- topic (string)
+- address (string)
+- rating (string)
     
     *address and rating are new property items added to the Recombee database. Other property items are not added again as they were already created as part of activities data upload to Recombee database. 
     *From and to property items which were created for activities data are automatically set to null for all the restaurants data that has been uploaded to Recombee database.
 
 Reference:
 
-    Recombee API (version 1.6.0), Available at: https://docs.recombee.com/api.html.
-    Zomato API, Available at: https://developers.zomato.com/api#headline1.
+- Recombee API (version 1.6.0), Available at: https://docs.recombee.com/api.html.
+- Zomato API, Available at: https://developers.zomato.com/api#headline1.
