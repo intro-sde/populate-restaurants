@@ -4,23 +4,23 @@ Pulling 120 records of restaurant data from four European cities (Roma, Milano, 
 
 Retrieving from Zomato API:
     
-    Under -> /GET/search
+- /GET/search
     
-    user-key = Zomato API-key
-    entity_id = city_id in Zomato
-    entity_type= city
+        user-key = Zomato API-key
+        entity_id = city_id in Zomato
+        entity_type= city
+
+        (e.g. GET --header "Accept: application/json" --header "user-key: <Zomato API-key>" "https://developers.zomato.com/api/v2.1/search?entity_id=<city_id>&entity_type=<city>")
     
-    (e.g. GET --header "Accept: application/json" --header "user-key: <Zomato API-key>" "https://developers.zomato.com/api/v2.1/search?entity_id=<city_id>&entity_type=<city>")
     
+- To get city_id in Zomato
     
-    To get city_id in Zomato
-    
-    Under -> /GET/cities
+        /GET/cities
          
-    user-key= Zomato API-key
-    q = city name (e.g. Rome)
-    
-    (e.g. GET --header "Accept: application/json" --header "user-key: <Zomato API-key>" "https://developers.zomato.com/api/v2.1/cities?q=<city name>")
+        user-key= Zomato API-key
+        q = city name (e.g. Rome)
+
+        (e.g. GET --header "Accept: application/json" --header "user-key: <Zomato API-key>" "https://developers.zomato.com/api/v2.1/cities?q=<city name>")
 
 Saving to "restaurants.csv" and after manually formatting data populating Recombee items table with the following properties:
 
@@ -33,6 +33,7 @@ Saving to "restaurants.csv" and after manually formatting data populating Recomb
 - rating (string)
     
     *address and rating are new property items added to the Recombee database. Other property items are not added again as they were already created as part of activities data upload to Recombee database. 
+    
     *From and to property items which were created for activities data are automatically set to null for all the restaurants data that has been uploaded to Recombee database.
 
 Reference:
