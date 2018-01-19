@@ -22,7 +22,7 @@ Retrieving from Zomato API:
     
     (e.g. GET --header "Accept: application/json" --header "user-key: <Zomato API-key>" "https://developers.zomato.com/api/v2.1/cities?q=<city name>")
 
-Saving to "restaurant.csv" and after manually correcting some data errors populating Recombee items table with the following properties:
+Saving to "restaurants.csv" and after manually formatting data populating Recombee items table with the following properties:
 
     id (string)
     type (string)
